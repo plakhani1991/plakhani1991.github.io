@@ -34,12 +34,15 @@
         </div>
     </div>
 
-    <form action="https://www.google.com/search">
-        <div class="search-container">
+    <form action="https://www.google.com/search" method="GET">
+        <div class="search-container" >
             <input type="text" name="q" id="search-input"">
-            <button type="button" id="clear-button" onclick="clearText()" class="clear-button">X</button> <br>
-            <button type="submit"> Google Search </button>
+            <button type="button" id="clear-button" onclick="clearText()" class="clear-button">X</button>
+            <button type="submit" class="search-button">
+                <img src="finder_logo.png" alt="Search" class="search-icon">
+            </button>
         </div>
+        <input type="hidden" name="tbm" value="isch">
     </form>
 </body>
 </html>
