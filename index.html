@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function clearText() {
+            var inputField = document.getElementById("search-input");
+            var clearButton = document.getElementById("clear-button");
+
+            // Clear the text in the input field
+            inputField.value = "";
+        }
+    </script>
+
+</head>
+
+<body>
+    <nav>
+        <div id="navtxt2">
+            <a id="navtxt" href="Advance Search.html" style="padding-right: 5%;">Advanced Search</a>
+            <a id="navtxt" href="Image Search.html">Image Search</a>
+        </div>
+    </nav>
+
+    <div class="fulllogo">
+        <img src="GoogleImage.png" width="20%" height="5%" id="googleimg" alt="Google Logo">
+    </div>
+
+    <form action="https://www.google.com/search">
+        <div class="search-container">
+            <input type="text" name="q" id="search-input"">
+            <button type="button" id="clear-button" onclick="clearText()" class="clear-button">X</button> <br>
+            <button type="submit"> Google Search </button>
+            <button type="submit" name="btnI" data-ved="0ahUKEwiNm6S0jYLrAhXslnIEHYv2B30QnRsIDg"> I'm Feeling Lucky </button>
+        </div>
+    </form>
+</body>
+</html>
